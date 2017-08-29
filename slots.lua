@@ -117,10 +117,4 @@ function slot:checkWin(a,b,c)
   end
 end
 
-wa = slot:register("Water Adventure", 10, 100, 1000, 1)
-wa:reconfigure("Water Adventure", 10, 100, 1000, 1)
-wa:setBetAmount(20)
-wa:debug("Initial Credits: "..user.credits)
-for i=1, 10000 do
-  wa:spin()
-end
+return slot
